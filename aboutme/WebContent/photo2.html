@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+            
+		}
+        body{
+            background-color: rgb(121, 211, 211);
+        }
+        header{
+            position: relative;
+            border: 1px solid white;
+            background-color: white;
+            margin:1% 0;
+            height: 10%;
+            
+        }
+        header ul{
+            /*list를 수직 가운데정렬 하기 위해 list를 감싸고 있는 ul을 */
+            position:absolute;/*ul의 부모를 relative 기준으로 삼고*/
+            top:50%;/*ul전체를 absolute하여 부모를 기준으로 움직이게하고*/
+            transform: translateY(-50%);/*중앙으로 위치시키는 방법으로 하면 됨.*/
+            margin:0;
+            left:40%;
+            padding:0;
+        }
+        header li{
+            display:inline-block;/*inline block으로 list를 가로정렬 시킴*/
+            list-style: none;
+            margin:5px;
+            
+        }
+
+
+        header li a{
+            display:block;
+            
+            width:180px;
+            height:30px;
+            background-color: rgb(121, 211, 211);
+            box-shadow: 3px 3px 3px gray ;
+            text-align: center;
+            font-size: 1em;
+            text-decoration: none;
+        }
+        li a span{
+            display:block;
+            padding-top: 3px;
+        }
+
+        section{
+            position:relative;/*자식 컨텐츠가 움직일 수 있도록 기준점이 됨*/
+            border:1px solid white;
+            background-color: white;
+            height: 76%;
+        }
+        .section_1{
+            position: relative;
+            height:50%;
+            margin :0 5%;
+            border-bottom: 1px solid black;
+        }
+        .section_2{
+            position:relative;
+            height:50%;
+            margin :0 5%;
+        }
+        img{
+            width: 180px;
+            height:180px;
+        }
+        .img1{
+            position: absolute;
+            top:50%;
+            width:50%;
+            transform: translateY(-50%);
+            left:10%;
+        }
+        p{
+            line-height: 2.0;
+        }
+        .img1_p{
+            position: absolute;
+            width:100%;
+            top:0px;
+            margin:3px 0;
+            padding-left: 190px;
+        }
+        .img2{
+            position: absolute;
+            top:50%;
+            width:50%;
+            transform: translateY(-50%);
+            left:10%;
+        }
+        .img2_p{
+            position: absolute;
+            width:100%;
+            top:0px;
+            margin:3px 0;
+            padding-left: 190px;
+        }
+        footer{
+            position: relative;
+            border:1px solid white;
+            background-color:white;
+            margin:1% 0px;
+            color:gray;
+            text-align: center;
+            font-size: 0.8em;
+            height:10%;
+        }
+        .footer_a{
+            position:absolute;
+            top: 50%;
+            transform: translateY(-50%); /*블록을 수직 가운데 정렬 하는 방법*/
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index3.html"><span>홈</span></a></li>
+            <li><a href="aboutme2.html"><span>자기소개</span></a></li>
+            <li><a href="#"><span>내사진</span></a></li>
+            <li><a href="http://localhost:8080/aboutme/today"><span>몇시에요</span></a></li>
+        </ul>
+    </header>
+    <section>
+       <div class="section_1">
+            <span class="img1"><img  src="김병준-.jpg" ><p class="img1_p">2016.12<br>제가 대학생때 찍은 사진입니다<br>이때는 참 철이 없었던것 같습니다.</p></span>
+            
+       </div>
+       <div class="section_2">
+            <span class="img2"><img src="문별.jpg"><p class="img1_p">2020.06<br>저의 최애 가수입니다<br>누가봐도 이쁘지 않나요?</p></span>
+       </div>
+    </section>
+    <footer>
+        <div class=footer_a>
+        crong@codesquad.kr<br>
+        http://github.com/crong
+        </div>
+    </footer>
+</body>
+</html>

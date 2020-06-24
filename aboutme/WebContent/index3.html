@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+            
+		}
+        body{
+            background-color: rgb(121, 211, 211);
+        }
+        header{
+            position: relative;
+            border: 1px solid white;
+            background-color: white;
+            margin:1% 0;
+            height: 10%;
+            
+        }
+        header ul{
+            /*list를 수직 가운데정렬 하기 위해 list를 감싸고 있는 ul을 */
+            position:absolute;/*ul의 부모를 relative 기준으로 삼고*/
+            top:50%;/*ul전체를 absolute하여 부모를 기준으로 움직이게하고*/
+            transform: translateY(-50%);/*중앙으로 위치시키는 방법으로 하면 됨.*/
+            margin:0;
+            left:40%;
+            padding:0;
+        }
+        header li{
+            display:inline-block;/*inline block으로 list를 가로정렬 시킴*/
+            list-style: none;
+            margin:5px;
+            
+        }
+
+
+        header li a{
+            display:block;
+            
+            width:180px;
+            height:30px;
+            background-color: rgb(121, 211, 211);
+            box-shadow: 3px 3px 3px gray ;
+            text-align: center;
+            font-size: 1em;
+            text-decoration: none;
+        }
+        li a span{
+            display:block;
+            padding-top: 3px;
+        }
+
+        section{
+            position:relative;/*자식 컨텐츠가 움직일 수 있도록 기준점이 됨*/
+            border:1px solid white;
+            background-color: white;
+            height: 76%;
+            text-align: center;
+        }
+        section ul{
+            float: left; /*section의 자식이므로 section을 기준으로 float됨.*/
+            position:absolute;
+            left:50%;
+            transform: translateX(-50%);
+            padding:0;
+            margin:0;
+        }
+        section li{
+            list-style: none;
+            display:inline-block;
+            position: relative;
+            
+        }
+        section li a{
+            display:block;
+            box-sizing: border-box;
+            border:1px solid white;
+            background-color: rgb(121, 211, 211);
+            text-decoration: none;
+            width: 120px;
+            height:120px;
+            color:white;
+            box-shadow: 3px 3px 3px gray ;
+            line-height:120px;/*텍스트를 수직 가운데 정렬하기 위해 꼭 필요한것*/
+            white-space: nowrap;
+            
+        }
+        
+        section img{
+            width: 400px;
+            height: 250px;
+            margin-top: 150px;
+        }
+        footer{
+            position: relative;
+            border:1px solid white;
+            background-color:white;
+            margin:1% 0px;
+            color:gray;
+            text-align: center;
+            font-size: 0.8em;
+            height:10%;
+        }
+        .footer_a{
+            position:absolute;
+            top: 50%;
+            transform: translateY(-50%); /*블록을 수직 가운데 정렬 하는 방법*/
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#"><span>홈</span></a></li>
+            <li><a href="aboutme2.html"><span>자기소개</span></a></li>
+            <li><a href="photo2.html"><span>내사진</span></a></li>
+            <li><a href="http://localhost:8080/aboutme/today"><span>몇시에요</span></a></li>
+        </ul>
+    </header>
+    <section>
+        <h2>웹프론트엔드 개발자 jun~!</h2>
+        <p>함께 개발하고 같이 성장하고 싶어요<br>서울 종로구 어딘가에 살고있어요!</p>
+        <ul>
+            <li><a href="aboutme2.html">자기소개</a></li>
+            <li><a href="photo2.html">내사진</a></li>
+        </ul>
+        <img src="naver_map.png">
+    </section>
+    <footer>
+        <div class=footer_a>
+        crong@codesquad.kr<br>
+        http://github.com/crong
+        </div>
+    </footer>
+</body>
+</html>
