@@ -13,4 +13,4 @@
   - 2020.06.24
   
 ### 🤟시연
-
+![aboutme](https://user-images.githubusercontent.com/65852909/103115200-04434e00-46a5-11eb-9632-b98e6c0914b1.gif)
