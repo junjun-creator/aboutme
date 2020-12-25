@@ -18,10 +18,10 @@
 ![aboutme](https://user-images.githubusercontent.com/65852909/103115200-04434e00-46a5-11eb-9632-b98e6c0914b1.gif)
 
 ---
-### Tech
+### 👏Tech
   - [x] Java JDK 8
   - [x] Apache Tomcat v.8.5
   
 ---
-### Download
+### 💼Download
   - git clone https://github.com/junjun-creator/aboutme.git
